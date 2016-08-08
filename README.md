@@ -1,9 +1,9 @@
-# Designkit *
+# Designkit Dropdown
 
 ## Install
 
 ```bash
-npm i designkit-*
+npm i designkit-dropdown
 ```
 
 ## Usage

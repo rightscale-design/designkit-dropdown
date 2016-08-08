@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Designkit-*</title>
-  <link rel="stylesheet" href="css/designkit-*.css">
+  <title>designkit-dropdown</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="https://rawgit.com/rightscale-design/designkit-buttons/master/css/designkit-buttons.min.css">
+  <link rel="stylesheet" href="https://rawgit.com/rightscale-design/designkit-typography/master/css/designkit-typography.min.css">
+  <link rel="stylesheet" href="css/designkit-dropdown.css">
   <style>
     *,
     *:before,
@@ -32,14 +34,44 @@
       padding: 0 40px;
       margin: 0 auto;
     }
+
   </style>
 </head>
 <body>
   <div class="wrapper">
-    <h1>Designkit *</h1>
+    <h1>Designkit Dropdown</h1>
     <div>
+
+      <h2>Base Dropdown</h2>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu">
+          <h6 class="dropdown-header">Actions</h6>
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <h6 class="dropdown-header">Years</h6>
+          <a class="dropdown-item"href="#">1998</a>
+          <a class="dropdown-item"href="#">1997</a>
+          <a class="dropdown-item"href="#">1996</a>
+          <a class="dropdown-item"href="#">1997</a>
+          <a class="dropdown-item"href="#">1994</a>
+        </div>
+      </div>
 
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  $('button').click(function(){
+    $('.dropdown').toggleClass('open');
+  });
+  $('.dropdown-item').click(function(){
+    $(this).toggleClass('active');
+  });
+  </script>
 </body>
 </html>

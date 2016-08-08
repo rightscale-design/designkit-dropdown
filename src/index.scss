@@ -2,9 +2,12 @@
 
 /*
 //
-// Designkit-*
+// designkit-dropdown
 // --------------------------------------------------
 */
 
-@import "bourbon";
-@import "src/designkit-*";
+@import
+  "bourbon",
+  "designkit-colors",
+  "designkit-dropdown"
+;

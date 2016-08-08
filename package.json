@@ -1,17 +1,17 @@
 {
-  "name": "designkit-*",
+  "name": "designkit-dropdown",
   "version": "0.0.1",
-  "description": "Sass module for css *.",
+  "description": "Sass module for css dropdown menus.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rightscale-design/designkit-*.git"
+    "url": "git+https://github.com/rightscale-design/designkit-dropdown.git"
   },
   "author": {
     "name": "Jason Melgoza",
     "email": "jason@rightscale.com"
   },
-  "main": "css/designkit-*.css",
-  "style": "css/designkit-*.css",
+  "main": "css/designkit-dropdown.css",
+  "style": "css/designkit-dropdown.css",
   "scss": "src/index.scss",
   "files": [
     "src",
@@ -22,7 +22,7 @@
     "Sass"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/rightscale-design/designkit-*#readme",
+  "homepage": "https://github.com/rightscale-design/designkit-dropdown#readme",
   "devDependencies": {
     "bourbon": "^4.2.7",
     "http-server": "^0.9.0",
