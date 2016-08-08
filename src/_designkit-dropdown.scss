@@ -153,7 +153,7 @@
     right: auto;
     left: 0;
   }
-  &.dropdown-select {
+  &.dropdown-menu-select {
     .dropdown-item {
       position: relative;
       padding-left: 25px;
@@ -191,7 +191,7 @@
       }
     }
   }
-  &.dropdown-scrollable {
+  &.dropdown-menu-scrollable {
     height: auto;
     max-height: 200px;
     overflow-x: hidden;

@@ -171,16 +171,16 @@
   left: 0;
 }
 
-.dropdown-menu.dropdown-select .dropdown-item {
+.dropdown-menu.dropdown-menu-select .dropdown-item {
   position: relative;
   padding-left: 25px;
 }
 
-.dropdown-menu.dropdown-select .dropdown-item.active {
+.dropdown-menu.dropdown-menu-select .dropdown-item.active {
   background-color: transparent;
 }
 
-.dropdown-menu.dropdown-select .dropdown-item:before {
+.dropdown-menu.dropdown-menu-select .dropdown-item:before {
   position: absolute;
   top: 6px;
   left: 8px;
@@ -195,23 +195,23 @@
   background-size: 11px;
 }
 
-.dropdown-menu.dropdown-select .dropdown-item:hover:before {
+.dropdown-menu.dropdown-menu-select .dropdown-item:hover:before {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath fill='%230769c6' fill-rule='evenodd' d='M9.942%201.1L8.622.056C8.58.02%208.527%200%208.472%200c-.055%200-.11.022-.15.06L3.52%206.23S1.63%204.413%201.58%204.36c-.053-.052-.123-.14-.23-.14-.105%200-.153.074-.208.13L.096%205.45c-.02.02-.03.033-.048.05-.03.04-.047.087-.048.136%200%20.054.02.097.048.138l.068.062s3.35%203.217%203.403%203.272c.056.056.122.125.22.125.097%200%20.176-.103.222-.15l5.988-7.69c.03-.042.048-.09.05-.14%200-.058-.02-.112-.056-.155'/%3E%3C/svg%3E");
 }
 
-.dropdown-menu.dropdown-select .dropdown-item.active:before, .dropdown-menu.dropdown-select .dropdown-item.active:hover:before {
+.dropdown-menu.dropdown-menu-select .dropdown-item.active:before, .dropdown-menu.dropdown-menu-select .dropdown-item.active:hover:before {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath fill='%230769c6' fill-rule='evenodd' d='M9.942%201.1L8.622.056C8.58.02%208.527%200%208.472%200c-.055%200-.11.022-.15.06L3.52%206.23S1.63%204.413%201.58%204.36c-.053-.052-.123-.14-.23-.14-.105%200-.153.074-.208.13L.096%205.45c-.02.02-.03.033-.048.05-.03.04-.047.087-.048.136%200%20.054.02.097.048.138l.068.062s3.35%203.217%203.403%203.272c.056.056.122.125.22.125.097%200%20.176-.103.222-.15l5.988-7.69c.03-.042.048-.09.05-.14%200-.058-.02-.112-.056-.155'/%3E%3C/svg%3E");
 }
 
-.dropdown-menu.dropdown-select .dropdown-item.disabled.active:before {
+.dropdown-menu.dropdown-menu-select .dropdown-item.disabled.active:before {
   color: #ccc;
 }
 
-.dropdown-menu.dropdown-select .dropdown-item.disable-select:before {
+.dropdown-menu.dropdown-menu-select .dropdown-item.disable-select:before {
   display: none;
 }
 
-.dropdown-menu.dropdown-scrollable {
+.dropdown-menu.dropdown-menu-scrollable {
   height: auto;
   max-height: 200px;
   overflow-x: hidden;
