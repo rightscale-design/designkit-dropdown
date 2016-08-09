@@ -191,7 +191,8 @@
       }
     }
   }
-  &.dropdown-menu-scrollable {
+  &.dropdown-menu-scrollable,
+  .dropdown-menu-filter + .dropdown-menu-scrollable {
     height: auto;
     max-height: 200px;
     overflow-x: hidden;
@@ -201,5 +202,15 @@
     @include transform-origin(top center);
     @include transform(scale(0));
     @include transition(all 300ms cubic-bezier(.3, 0, 0, 1.3));
+  }
+
+  .dropdown-menu-filter {
+    padding: 5px 10px;
+    input[type="text"] {
+      width: 250px;
+    }
+  }
+  .dropdown-menu-filter + .dropdown-menu-scrollable {
+    margin-bottom: -5px;
   }
 }
