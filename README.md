@@ -8,23 +8,200 @@ npm i designkit-dropdown
 
 ## Usage
 
+### Basic Menu
+
 ```html
-<div class="dropdown">
+<div class="dropdown open">
   <button class="btn btn-default dropdown-toggle" type="button">
-    Dropdown button
+    Dropdown Button
   </button>
   <div class="dropdown-menu">
-    <h6 class="dropdown-header">Actions</h6>
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+```
+
+### Optional Drop up
+
+```html
+<div class="dropup open">
+  <button class="btn btn-default dropdown-toggle" type="button">
+    Dropup Button
+  </button>
+  <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+```
+
+### Optional Dividers
+
+```html
+<div class="dropdown open">
+  <button class="btn btn-default dropdown-toggle" type="button">
+    Dropdown Button
+  </button>
+  <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Settings</a>
+  </div>
+</div>
+```
+
+### Optional Headers
+
+```html
+<div class="dropdown open">
+  <button class="btn btn-default dropdown-toggle" type="button">
+    Dropdown Button
+  </button>
+  <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <h6 class="dropdown-header">Settings</h6>
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+```
+
+### Optional Menu Title
+
+```html
+<div class="dropdown open">
+  <button class="btn btn-default dropdown-toggle" type="button">
+    Dropdown Button
+  </button>
+  <div class="dropdown-menu">
+      <div class="dropdown-title">
+        <h6>Optional Menu Title</h6>
+      </div>
+      <div class="dropdown-body">
+        <h6 class="dropdown-header">Actions</h6>
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+  </div>
+</div>
+```
+
+### Optional Scroll
+
+```html
+<div class="dropdown open">
+  <button class="btn btn-default dropdown-toggle" type="button">
+    Dropdown Button
+  </button>
+  <div class="dropdown-menu dropdown-menu-scrollable">
+    <div class="dropdown-body">
+      <h6 class="dropdown-header">Actions</h6>
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <h6 class="dropdown-header">Years</h6>
+      <a class="dropdown-item"href="#">1998</a>
+      <a class="dropdown-item"href="#">1997</a>
+      <a class="dropdown-item"href="#">1996</a>
+      <a class="dropdown-item"href="#">1997</a>
+      <a class="dropdown-item"href="#">1994</a>
+      <a class="dropdown-item"href="#">1998</a>
+      <a class="dropdown-item"href="#">1997</a>
+      <a class="dropdown-item"href="#">1996</a>
+      <a class="dropdown-item"href="#">1997</a>
+      <a class="dropdown-item"href="#">1994</a>
+    </div>
+  </div>
+</div>
+```
+
+### Select Menu
+
+```html
+<div class="dropdown open">
+  <button class="btn btn-default dropdown-toggle" type="button">
+    Dropdown Button
+  </button>
+  <div class="dropdown-menu dropdown-menu-select">
     <a class="dropdown-item" href="#">Action</a>
     <a class="dropdown-item" href="#">Another action</a>
     <a class="dropdown-item" href="#">Something else here</a>
-    <div class="dropdown-divider"></div>
-    <h6 class="dropdown-header">Years</h6>
-    <a class="dropdown-item"href="#">1998</a>
-    <a class="dropdown-item"href="#">1997</a>
-    <a class="dropdown-item"href="#">1996</a>
-    <a class="dropdown-item"href="#">1997</a>
-    <a class="dropdown-item"href="#">1994</a>
+  </div>
+</div>
+```
+
+### Filter Menu
+
+```html
+<div class="dropdown open">
+  <button class="btn btn-default dropdown-toggle" type="button">
+    Dropdown Button
+  </button>
+  <div class="dropdown-menu dropdown-menu-filter">
+    <div class="dropdown-filter">
+      <input id="my_input" class="form-control" type="text" name="name" value="" placeholder="Filter">
+    </div>
+    <div class="dropdown-body">
+      <a class="dropdown-item"href="#">1998</a>
+      <a class="dropdown-item"href="#">1997</a>
+      <a class="dropdown-item"href="#">1996</a>
+      <a class="dropdown-item"href="#">1997</a>
+      <a class="dropdown-item"href="#">1994</a>
+      <a class="dropdown-item"href="#">1998</a>
+      <a class="dropdown-item"href="#">1997</a>
+      <a class="dropdown-item"href="#">1996</a>
+      <a class="dropdown-item"href="#">1997</a>
+      <a class="dropdown-item"href="#">1994</a>
+      <a class="dropdown-item"href="#">1993</a>
+      <a class="dropdown-item"href="#">1992</a>
+    </div>
+  </div>
+</div>
+```
+
+### Multiple Menu Options
+
+```html
+<div class="dropdown open">
+  <button class="btn btn-default dropdown-toggle" type="button">
+    Dropdown Button
+  </button>
+  <div class="dropdown-menu dropdown-menu-select dropdown-menu-filter dropdown-menu-scrollable dropdown-menu-left">
+    <div class="dropdown-title">
+      <h6>Optional Menu Title</h6>
+    </div>
+    <div class="dropdown-filter">
+      <input id="my_input" class="form-control" type="text" name="name" value="" placeholder="Filter">
+    </div>
+    <div class="dropdown-body">
+      <h6 class="dropdown-header">Actions</h6>
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <h6 class="dropdown-header">Years</h6>
+      <a class="dropdown-item"href="#">1998</a>
+      <a class="dropdown-item"href="#">1997</a>
+      <a class="dropdown-item"href="#">1996</a>
+      <a class="dropdown-item"href="#">1997</a>
+      <a class="dropdown-item"href="#">1994</a>
+      <a class="dropdown-item"href="#">1998</a>
+      <a class="dropdown-item"href="#">1997</a>
+      <a class="dropdown-item"href="#">1996</a>
+      <a class="dropdown-item"href="#">1997</a>
+      <a class="dropdown-item"href="#">1994</a>
+    </div>
   </div>
 </div>
 ```
@@ -88,7 +265,8 @@ npm i designkit-dropdown
   background-color: #fff;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(209, 214, 220, 0.99);
+  border-bottom-color: rgba(200, 206, 213, 0.99);
   border-radius: .25rem;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   opacity: 0;
@@ -126,7 +304,7 @@ npm i designkit-dropdown
   height: 1px;
   margin: .5rem 0;
   overflow: hidden;
-  background-color: #e5e5e5;
+  background-color: #e2e5e9;
 }
 
 .dropdown-item {
@@ -183,6 +361,22 @@ npm i designkit-dropdown
 
 .open > a {
   outline: 0;
+}
+
+.dropdown-title {
+  padding: 5px 10px 11px;
+  margin: 0 0 3px 0;
+  border-bottom: 1px solid #e2e5e9;
+  box-shadow: inset 0 -2px 0 #F4F5F7;
+}
+
+.dropdown-title h6 {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #57626C;
 }
 
 .dropdown-header {
@@ -245,13 +439,6 @@ npm i designkit-dropdown
   display: none;
 }
 
-.dropdown-menu.dropdown-menu-scrollable {
-  height: auto;
-  max-height: 200px;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
 .dropdown-menu.dropdown-menu-center {
   -webkit-transform-origin: top center;
   -moz-transform-origin: top center;
@@ -266,6 +453,25 @@ npm i designkit-dropdown
   -webkit-transition: all 300ms cubic-bezier(0.3, 0, 0, 1.3);
   -moz-transition: all 300ms cubic-bezier(0.3, 0, 0, 1.3);
   transition: all 300ms cubic-bezier(0.3, 0, 0, 1.3);
+}
+
+.dropdown-menu.dropdown-menu-scrollable .dropdown-body {
+  height: auto;
+  max-height: 200px;
+  padding: 5px 0 0 0;
+  margin: 0 0 -5px 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.dropdown-menu.dropdown-menu-filter .dropdown-filter {
+  position: relative;
+  padding: 5px 10px 8px 10px;
+  border-bottom: 1px solid #e2e5e9;
+}
+
+.dropdown-menu.dropdown-menu-filter .dropdown-filter input[type="text"] {
+  width: 250px;
 }
 ```
 
