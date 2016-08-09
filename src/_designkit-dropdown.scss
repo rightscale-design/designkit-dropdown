@@ -57,6 +57,7 @@
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid rgba($grey-border,.99);
+  border-bottom-color: rgba(darken($grey-border, 3),.99);
   border-radius: .25rem;
   box-shadow: 0 6px 12px rgba(0,0,0,.175);
   opacity: 0;
