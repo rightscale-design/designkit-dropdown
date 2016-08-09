@@ -206,8 +206,22 @@
 
   .dropdown-menu-filter {
     padding: 5px 10px;
+    position: relative;
     input[type="text"] {
       width: 250px;
+    }
+    &:after {
+      position: absolute;
+      top: auto;
+      left: 0;
+      right: 0;
+      bottom: -7px;
+      content: '';
+      width: 100%;
+      background-color: transparent;
+      @include background-image(linear-gradient(#fff, rgba(white, 0)));
+      height: 7px;
+      z-index: 1;
     }
   }
   .dropdown-menu-filter + .dropdown-menu-scrollable {

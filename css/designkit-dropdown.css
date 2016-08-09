@@ -237,10 +237,26 @@
 
 .dropdown-menu .dropdown-menu-filter {
   padding: 5px 10px;
+  position: relative;
 }
 
 .dropdown-menu .dropdown-menu-filter input[type="text"] {
   width: 250px;
+}
+
+.dropdown-menu .dropdown-menu-filter:after {
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  content: '';
+  width: 100%;
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(#fff, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(#fff, rgba(255, 255, 255, 0));
+  height: 5px;
+  z-index: 1;
 }
 
 .dropdown-menu .dropdown-menu-filter + .dropdown-menu-scrollable {
