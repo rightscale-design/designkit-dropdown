@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dropdown - Title</title>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/rightscale-design/designkit-global/master/dist/designkit-global.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/rightscale-design/designkit-typography/master/css/designkit-typography.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/rightscale-design/designkit-buttons/master/dist/designkit-buttons.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/rightscale-design/designkit-forms/master/dist/designkit-forms.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/rightscale-design/designkit-dropdown/master/css/designkit-dropdown.min.css">
+</head>
+
+<body class="sans">
+  <div style="padding: 2rem;">
+    <div class="dropdown open">
+      <button class="btn btn-default dropdown-toggle" type="button">
+        Dropdown Button
+      </button>
+      <div class="dropdown-menu">
+          <div class="dropdown-title">
+            <h6>Optional Menu Title</h6>
+          </div>
+          <div class="dropdown-body">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $('button').click(function() {
+      $(this).parent().toggleClass('open');
+    });
+    $('.dropdown-menu-select .dropdown-item').click(function() {
+      $(this).toggleClass('active');
+    });
+
+  </script>
+</body>
+</html>

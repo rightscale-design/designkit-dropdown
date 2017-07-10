@@ -87,7 +87,6 @@ npm i designkit-dropdown
         <h6>Optional Menu Title</h6>
       </div>
       <div class="dropdown-body">
-        <h6 class="dropdown-header">Actions</h6>
         <a class="dropdown-item" href="#">Action</a>
         <a class="dropdown-item" href="#">Another action</a>
         <a class="dropdown-item" href="#">Something else here</a>
@@ -209,11 +208,6 @@ npm i designkit-dropdown
 ## The CSS
 
 ```css
-/*
-//
-// designkit-dropdown
-// --------------------------------------------------
-*/
 .dropdown,
 .dropup {
   position: relative;
@@ -263,7 +257,6 @@ npm i designkit-dropdown
   text-align: left;
   list-style: none;
   background-color: #fff;
-  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid rgba(209, 214, 220, 0.99);
   border-bottom-color: rgba(200, 206, 213, 0.99);
@@ -271,18 +264,12 @@ npm i designkit-dropdown
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   opacity: 0;
   -webkit-transform-origin: top;
-  -moz-transform-origin: top;
-  -ms-transform-origin: top;
-  -o-transform-origin: top;
   transform-origin: top;
   -webkit-transform: scale(1, 0);
-  -moz-transform: scale(1, 0);
-  -ms-transform: scale(1, 0);
-  -o-transform: scale(1, 0);
   transform: scale(1, 0);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.21, 1.175);
-  -moz-transition: -moz-transform 0.2s cubic-bezier(0.175, 0.885, 0.21, 1.175);
+  transition: -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.21, 1.175);
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.21, 1.175);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.21, 1.175), -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.21, 1.175);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -294,9 +281,6 @@ npm i designkit-dropdown
 
 .dropup .dropdown-menu {
   -webkit-transform-origin: bottom;
-  -moz-transform-origin: bottom;
-  -ms-transform-origin: bottom;
-  -o-transform-origin: bottom;
   transform-origin: bottom;
 }
 
@@ -348,9 +332,6 @@ npm i designkit-dropdown
   display: block;
   opacity: 1;
   -webkit-transform: scale(1, 1);
-  -moz-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  -o-transform: scale(1, 1);
   transform: scale(1, 1);
 }
 
@@ -441,17 +422,9 @@ npm i designkit-dropdown
 
 .dropdown-menu.dropdown-menu-center {
   -webkit-transform-origin: top center;
-  -moz-transform-origin: top center;
-  -ms-transform-origin: top center;
-  -o-transform-origin: top center;
   transform-origin: top center;
   -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
   transform: scale(0);
-  -webkit-transition: all 300ms cubic-bezier(0.3, 0, 0, 1.3);
-  -moz-transition: all 300ms cubic-bezier(0.3, 0, 0, 1.3);
   transition: all 300ms cubic-bezier(0.3, 0, 0, 1.3);
 }
 
@@ -481,24 +454,4 @@ Jason Melgoza
 
 ## License
 
-The MIT License (MIT)
-
-Copyright (c) 2016 RightScale
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+MIT
