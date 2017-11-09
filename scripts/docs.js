@@ -1,6 +1,6 @@
 var csso = require('csso');
 var fs = require('fs');
-var inputFile = "./dist/app.css";
+var inputFile = "./dist/designkit-dropdown.css";
 var input = fs.readFileSync(inputFile, 'utf8');
 var output = csso.minify(input);
 var outputFile = "./docs/doc.min.css";

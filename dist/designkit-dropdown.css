@@ -1,3 +1,8 @@
+/*
+//
+// Designkit-Dropdown
+// --------------------------------------------------
+*/
 .dropdown,
 .dropup {
   position: relative;
@@ -115,6 +120,99 @@
   color: #0769c6;
   text-decoration: none;
   background-color: #f1f1f1;
+}
+
+.dropdown-multi-select .dropdown-multi-select-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 10px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1;
+  color: #0A83F6;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  background: 0 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dropdown-multi-select .dropdown-multi-select-item:not(:last-child) {
+  border-bottom: 1px solid #e2e5e9;
+}
+
+.dropdown-multi-select .dropdown-multi-select-item.disabled {
+  cursor: not-allowed;
+  background-color: transparent;
+  opacity: .6;
+}
+
+.dropdown-multi-select .dropdown-multi-select-item:not(.disabled).active {
+  font-weight: bold;
+  color: #0769c6;
+  background-color: transparent;
+}
+
+.dropdown-multi-select .dropdown-multi-select-item:not(.disabled).active .dropdown-multi-select-checkbox:after {
+  border-color: #80C11A;
+}
+
+.dropdown-multi-select .dropdown-multi-select-item:not(.disabled).active .dropdown-multi-select-checkbox:before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: 1;
+  width: 7px;
+  height: 6px;
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='6' viewBox='0 0 7 6'%3E%3Cpath fill='%2380C11A' d='M2.6 6c.3 0 .5-.1.7-.3l3.4-4.3c.1-.2.2-.4.2-.5 0-.3-.1-.5-.3-.7C6.4.1 6.2 0 6 0c-.3 0-.5.1-.7.3L2.5 3.9l-1-1c-.2-.2-.4-.3-.6-.3s-.4.1-.6.3c-.2.1-.3.3-.3.5s.1.5.3.6L2 5.7c.1.2.3.3.6.3z'/%3E%3C/svg%3E");
+}
+
+.dropdown-multi-select .dropdown-multi-select-item:not(.disabled).active:focus .dropdown-multi-select-checkbox:after, .dropdown-multi-select .dropdown-multi-select-item:not(.disabled).active:hover .dropdown-multi-select-checkbox:after {
+  border-color: #80C11A;
+}
+
+.dropdown-multi-select .dropdown-multi-select-item:not(.disabled):focus, .dropdown-multi-select .dropdown-multi-select-item:not(.disabled):hover {
+  color: #0769c6;
+  text-decoration: none;
+  background-color: #f1f1f1;
+}
+
+.dropdown-multi-select .dropdown-multi-select-item:not(.disabled):focus .dropdown-multi-select-checkbox:after, .dropdown-multi-select .dropdown-multi-select-item:not(.disabled):hover .dropdown-multi-select-checkbox:after {
+  border-color: #7b8895;
+}
+
+.dropdown-multi-select .dropdown-multi-select-checkbox {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+}
+
+.dropdown-multi-select .dropdown-multi-select-checkbox:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  content: "";
+  background: #fff;
+  border: 2px solid #A2AFBA;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
 .open > .dropdown-menu,
