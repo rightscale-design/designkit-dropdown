@@ -22,7 +22,8 @@
   "files": [
     "LICENSE",
     "README.md",
-    "dist/"
+    "dist/",
+    "docs/"
   ],
   "style": "src/index.scss",
   "browserslist": [
