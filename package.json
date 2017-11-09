@@ -1,6 +1,6 @@
 {
   "name": "designkit-dropdown",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Sass module for dropdown menus used in RightScale apps.",
   "homepage": "https://github.com/rightscale-design/designkit-dropdown#readme",
   "repository": {
