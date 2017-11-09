@@ -446,6 +446,7 @@ npm i designkit-dropdown
   left: 0;
   width: 14px;
   height: 14px;
+  box-sizing: border-box;
   content: "";
   background: #fff;
   border: 2px solid #A2AFBA;
