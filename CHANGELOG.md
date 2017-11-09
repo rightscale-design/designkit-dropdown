@@ -1,3 +1,9 @@
+# v1.1.0
+
+* Updated build scripts
+* Updated src file structure
+* Added a multi-select checkbox pattern
+
 # v1.0.0
 
 * Version bump

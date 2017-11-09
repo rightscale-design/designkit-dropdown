@@ -1,47 +1,54 @@
 {
   "name": "designkit-dropdown",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Sass module for dropdown menus used in RightScale apps.",
+  "homepage": "https://github.com/rightscale-design/designkit-dropdown#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rightscale-design/designkit-dropdown.git"
   },
   "author": {
-    "name": "Jason Melgoza",
-    "email": "jason@rightscale.com"
+    "name": "Jason Melgoza"
   },
-  "main": "css/designkit-dropdown.css",
-  "style": "css/designkit-dropdown.css",
-  "scss": "src/index.scss",
-  "files": [
-    "src",
-    "css"
-  ],
-  "keywords": [
-    "css",
-    "Sass"
-  ],
   "license": "MIT",
-  "homepage": "https://github.com/rightscale-design/designkit-dropdown#readme",
+  "keywords": [
+    "sass",
+    "css",
+    "styles"
+  ],
+  "bugs": {
+    "url": "https://github.com/rightscale-design/designkit-dropdown/issues"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist/",
+    "docs/"
+  ],
+  "style": "src/index.scss",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
   "devDependencies": {
     "autoprefixer": "^6.4.0",
-    "bourbon": "^4.2.7",
-    "clean-css": "^3.4.19",
+    "bourbon": "^4.3.4",
+    "csso": "^3.1.1",
     "designkit-colors": "^1.0.0",
-    "http-server": "^0.9.0",
-    "node-sass": "^3.8.0",
+    "node-sass": "^4.5.3",
     "nodemon": "^1.10.0",
     "npm-run-all": "^2.3.0",
-    "postcss-cli": "^2.5.2"
+    "serve": "^6.0.6"
   },
   "scripts": {
     "start": "npm run build:serve",
-    "serve": "http-server docs -p 9000",
+    "serve": "serve docs/ -o",
     "watch": "nodemon -e scss -x 'npm run build:all'",
-    "build:scss": "./bin/scss",
-    "build:prefix": "postcss -u autoprefixer -b 'last 2 versions' < src/css/_designkit-dropdown.css > dist/designkit-dropdown.css",
-    "build:minify": "cleancss -o dist/designkit-dropdown.min.css dist/designkit-dropdown.css",
-    "build:all": "npm run build:scss && npm run build:prefix && npm run build:minify",
+    "build:scss": "node ./scripts/scss.js",
+    "build:prefix": "node ./scripts/postcss.js",
+    "build:minify": "node ./scripts/minify.js",
+    "build:docs": "node ./scripts/docs.js",
+    "build:all": "npm run build:scss && npm run build:prefix && npm run build:minify && npm run build:docs",
     "build:serve": "run-p watch serve"
   }
 }
