@@ -140,7 +140,7 @@ npm i designkit-dropdown
 </div>
 ```
 
-### Multi-Select menu
+### Multi-Select Menu
 
 ```html
 <div class="dropdown open">
