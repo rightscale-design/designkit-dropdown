@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Dropdown - Basic</title>
+  <title>Dropdown - Select</title>
   <link rel="stylesheet" href="https://unpkg.com/designkit-global@1.1.0/dist/designkit-global.min.css">
   <link rel="stylesheet" href="https://unpkg.com/designkit-typography@1.0.0/dist/designkit-typography.min.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/rightscale-design/designkit-buttons/master/dist/designkit-buttons.min.css">
@@ -17,10 +17,23 @@
       <button class="btn btn-default dropdown-toggle" type="button">
         Dropdown Button
       </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-menu dropdown-multi-select">
+        <div class="dropdown-multi-select-item">
+          <div class="dropdown-multi-select-checkbox"></div>
+          <div>Amazon Web Services‎</div>
+        </div>
+        <div class="dropdown-multi-select-item">
+          <div class="dropdown-multi-select-checkbox"></div>
+          <div>Microsoft Azure</div>
+        </div>
+        <div class="dropdown-multi-select-item">
+          <div class="dropdown-multi-select-checkbox"></div>
+          <div>Google Cloud Platform 3845398-3487939</div>
+        </div>
+        <div class="dropdown-multi-select-item disabled">
+          <div class="dropdown-multi-select-checkbox"></div>
+          <div>Alibaba Cloud</div>
+        </div>
       </div>
     </div>
   </div>
@@ -29,11 +42,10 @@
     $('button').click(function() {
       $(this).parent().toggleClass('open');
     });
-    $('.dropdown-menu-select .dropdown-item').click(function() {
-      $(this).toggleClass('active');
+    $('.dropdown-multi-select .dropdown-multi-select-item').click(function() {
+      $(this).toggleClass('checked active');
     });
 
   </script>
 </body>
-
 </html>
