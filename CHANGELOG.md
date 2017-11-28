@@ -1,3 +1,8 @@
+# v1.1.3
+
+* Updated docs
+* Added a .npmignore file
+
 # v1.1.0
 
 * Updated build scripts
