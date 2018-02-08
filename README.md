@@ -297,14 +297,14 @@ npm i designkit-dropdown
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   opacity: 0;
   -webkit-transform-origin: top;
-  transform-origin: top;
+          transform-origin: top;
   -webkit-transform: scale(1, 0);
-  transform: scale(1, 0);
+          transform: scale(1, 0);
   transition: -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.21, 1.175);
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.21, 1.175);
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.21, 1.175), -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.21, 1.175);
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .dropdown-menu > * {
@@ -314,7 +314,7 @@ npm i designkit-dropdown
 
 .dropup .dropdown-menu {
   -webkit-transform-origin: bottom;
-  transform-origin: bottom;
+          transform-origin: bottom;
 }
 
 .dropdown-divider {
@@ -337,9 +337,9 @@ npm i designkit-dropdown
   background: 0 0;
   border: 0;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .dropdown-item.active {
@@ -383,9 +383,9 @@ npm i designkit-dropdown
       -ms-flex-align: center;
           align-items: center;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .dropdown-multi-select .dropdown-multi-select-item:not(:last-child) {
@@ -459,7 +459,7 @@ npm i designkit-dropdown
   display: block;
   opacity: 1;
   -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
+          transform: scale(1, 1);
 }
 
 .open > .dropdown-menu > *,
@@ -549,9 +549,9 @@ npm i designkit-dropdown
 
 .dropdown-menu.dropdown-menu-center {
   -webkit-transform-origin: top center;
-  transform-origin: top center;
+          transform-origin: top center;
   -webkit-transform: scale(0);
-  transform: scale(0);
+          transform: scale(0);
   transition: all 300ms cubic-bezier(0.3, 0, 0, 1.3);
 }
 
