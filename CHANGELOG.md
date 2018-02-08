@@ -1,4 +1,4 @@
-# v1.1.3
+# v1.1.4
 
 * Removed Bourbon
 * Updated package.json
