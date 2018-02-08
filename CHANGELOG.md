@@ -1,5 +1,10 @@
 # v1.1.3
 
+* Removed Bourbon
+* Updated package.json
+
+# v1.1.3
+
 * Updated docs
 * Added a .npmignore file
 
