@@ -1,3 +1,10 @@
+# v1.1.5
+
+* Updated package.json
+* Updated docs
+* Updated scss script for new designkit-colors path
+* Added readme script
+
 # v1.1.4
 
 * Removed Bourbon
